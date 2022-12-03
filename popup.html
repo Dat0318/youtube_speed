@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YoutubeSpeedController</title>
+    <script src="popup.js"></script>
+    <link rel="stylesheet" type="text/css" href="popup.css" />
+  </head>
+  <body>
+    <div id="first-row">
+      <label for="mySelect" id="selectLabel">Playback Speed:</label>
+      <div id="wrapMySelect">
+        <select id="mySelect">
+          <option value="1">1</option>
+          <option value="1.5">1.5</option>
+          <option value="2">2</option>
+          <option value="2.5">2.5</option>
+          <option value="3" selected="selected">3</option>
+          <option value="3.5">3.5</option>
+          <option value="4">4</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="form">
+      <span style="white-space: nowrap">
+        <input
+          type="text"
+          id="query-field"
+          value="3"
+          placeholder="Enter Custom Speed"
+        />
+        <button id="clickIt" class="btn btn-primary" value="Define">
+          Submit
+        </button>
+      </span>
+    </div>
+
+    <p id="notValidNumText"></p>
+  </body>
+</html>

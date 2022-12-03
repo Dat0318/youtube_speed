@@ -80,11 +80,11 @@ body {
   text-align-last: center;
 }
 
-#mySelect {
+#wrapMySelect {
 	width: 100%;
 }
 
-#mySelect select {
+#mySelect {
   border: 1px solid #999;
   border-radius: 3px;
   display: inline-block;
