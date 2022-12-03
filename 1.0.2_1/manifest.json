@@ -1,0 +1,26 @@
+{
+   "background": {
+      "persistent": false,
+      "scripts": [ "background.js" ]
+   },
+   "content_scripts": [ {
+      "js": [ "content.js" ],
+      "matches": [ "https://www.youtube.com/watch*" ]
+   } ],
+   "description": "Control the speed of youtube videos, with no limits.",
+   "icons": {
+      "128": "icon_128.png",
+      "16": "icon_16.png",
+      "48": "icon_48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA61OeC2aLciLtEyTmi25HiBSvj/5fu32HJN9VOIDI667k9RQb5nGJkX8gvPLVRUm3aB27+LN4v0LP7WhRBkqf8g5bU6rpGQ6gK2dEZtJevmN5D0YwI/JW0mFHK2NszkbYCYbskNeiFxFZ2pYEQ+AFJ2dp8ihRd+ktvvVlTylcttH0uZjocJr9uUjDA9ljmRAbPxUyJoWWSAIuNfVdpyLgGuhU/m+lMZr/g07zPfC20ybyO21qt9MWADtkuxnYkk6Cyr5w97hlOpvNAUVCwhdyKQHxtl5kSj6WdUKZy+1BI88XRBSVjU/iGsOPvIizP9UaoRgvQ3ewuLCi1dttPQ0OmQIDAQAB",
+   "manifest_version": 2,
+   "name": "Youtube Speed",
+   "page_action": {
+      "default_icon": "icon.png",
+      "default_popup": "popup.html"
+   },
+   "permissions": [ "tabs", "storage", "declarativeContent", "*://www.youtube.com/watch*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.0"
+}
